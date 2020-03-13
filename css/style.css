@@ -472,7 +472,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 3.46rem);
   padding-top: 90px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   color: #ffffff; }
@@ -516,7 +516,7 @@ img {
 .scroll-down {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -3.46rem;
   display: flex;
   justify-content: center;
   align-items: center;
