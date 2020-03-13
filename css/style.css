@@ -397,6 +397,17 @@ template {
   width: 85%;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 30%; }
+
+.col-50 {
+  width: 50%; }
+
 *, *::before, *::after {
   box-sizing: border-box;
   outline: none; }
@@ -416,10 +427,33 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section_dark {
+    background-color: #131313;
+    color: #ffffff; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
+    .section-title_left {
+      text-align: left; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase;
+      margin: 1rem 0;
+      line-height: 2.642rem; }
+      .section-title__heading_primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        margin-left: 2rem;
+        background-color: #E3B873; }
+    .section-title__text {
+      max-width: 31.57rem;
+      font-size: 1.28rem;
+      line-height: 2.07rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -430,8 +464,6 @@ img {
         height: 2px;
         margin: 0 10px;
         background-color: #E3B873; }
-    .section-title__heading {
-      margin: 1rem 0; }
 
 .header {
   position: fixed;
@@ -559,16 +591,48 @@ img {
       margin-left: 8px;
       background-color: #E3B873; }
 
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__heading {
+    margin-bottom: 0.64rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    color: #E3B873;
+    text-transform: uppercase; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    padding-bottom: 2rem;
+    margin-bottom: 2.42rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 1px;
+  top: auto;
+  width: 42px;
+  height: 14px;
+  background-size: 42px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url(../img/projects/arrow-prev.svg) center no-repeat; }
+
+.swiper-button-next {
+  background: url(../img/projects/arrow-next.svg) center no-repeat; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+  width: auto; }
+
 .types__section-title {
   margin-bottom: 2rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__title {
   margin-top: 0;
