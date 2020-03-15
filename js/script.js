@@ -53,4 +53,21 @@ $(document).ready(function(){
 
   bullets.css('left', prev.width() +30 )
   next.css('left', prev.width() + 30 + bullets.width() + 30);
+
+  var mySwiper = new Swiper ('.swiper-container-steps', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination-steps',
+      type: 'bullets',
+    },
+    pagination: {
+      el: '.swiper-pagination-steps-fraction',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-steps-next',
+      prevEl: '.swiper-button-steps-prev',
+    }
+  })
 });
