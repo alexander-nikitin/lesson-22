@@ -698,9 +698,6 @@ img {
 .card__pricetag_design {
   padding: 1.2rem 3.88rem; }
 
-.swiper-pagination-steps-fraction {
-  margin-bottom: 1.571rem; }
-
 .swiper-slide__text_steps {
   max-width: 24.071rem;
   font-size: 1.07rem;
@@ -713,6 +710,68 @@ img {
   line-height: 1.642rem;
   text-transform: uppercase;
   color: #E3B873; }
+
+.step-fraction__number {
+  margin-bottom: 1.571rem; }
+
+.steps__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 6.429rem; }
+
+.steps__item {
+  width: 32%;
+  margin-bottom: 2.571rem;
+  opacity: 0.3;
+  cursor: pointer; }
+  .steps__item.active {
+    opacity: 1; }
+
+.steps__number {
+  position: relative;
+  display: block;
+  margin-bottom: 1.07rem; }
+  .steps__number::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 16px;
+    height: 1px;
+    background-color: #E3B873; }
+
+.steps__text {
+  max-width: 136px; }
+
+.swiper-container-steps {
+  position: relative;
+  padding-bottom: 4.268rem; }
+
+.swiper-button-prev-steps {
+  position: absolute;
+  bottom: 1px;
+  top: auto;
+  width: 42px;
+  height: 14px;
+  background-size: 42px;
+  left: 0;
+  background: url(../img/projects/arrow-prev.svg) center no-repeat;
+  cursor: pointer; }
+
+.swiper-button-next-steps {
+  position: absolute;
+  bottom: 0px;
+  top: auto;
+  width: 42px;
+  height: 14px;
+  background-size: 42px;
+  background: url(../img/projects/arrow-next.svg) center no-repeat;
+  cursor: pointer; }
+
+.swiper-pagination-steps {
+  position: absolute; }
 
 .modal {
   opacity: 0;
